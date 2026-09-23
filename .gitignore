@@ -1,0 +1,18 @@
+# Java compiled files
+*.class
+backend/bin/
+
+# Java build/output
+*.jar
+
+# Database / local configuration
+.env
+*.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - BabyShop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="container">
+  <div class="form-wrap card">
+    <h2>Create your account</h2>
+    <p class="subtitle">Join BabyShop to start shopping for your little one.</p>
+
+    <div id="form-alert"></div>
+
+    <form id="register-form" novalidate>
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-text" id="err-name"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-text" id="err-email"></span>
+      </div>
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+        <span class="error-text" id="err-phone"></span>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+        <span class="error-text" id="err-password"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Create Account</button>
+    </form>
+
+    <p class="form-footer">Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+</div>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

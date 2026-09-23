@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - BabyShop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="container">
+  <div class="form-wrap card">
+    <h2>Welcome back</h2>
+    <p class="subtitle">Log in to continue shopping.</p>
+
+    <div id="form-alert"></div>
+
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Log In</button>
+    </form>
+
+    <p class="form-footer">New to BabyShop? <a href="register.html">Create an account</a></p>
+    <p class="form-footer" style="font-size:0.8rem;">Admin demo login: admin@babyshop.com / Admin@123</p>
+  </div>
+</div>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

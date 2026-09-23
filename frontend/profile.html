@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile - BabyShop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="container">
+  <div class="form-wrap card">
+    <h2>My Profile</h2>
+    <p class="subtitle">Update your name and phone number.</p>
+
+    <div id="form-alert"></div>
+
+    <form id="profile-form" novalidate>
+      <div class="field">
+        <label for="email">Email (cannot be changed)</label>
+        <input type="email" id="email" disabled>
+      </div>
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" required>
+      </div>
+      <div class="field">
+        <label>Account Type</label>
+        <input type="text" id="role" disabled>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

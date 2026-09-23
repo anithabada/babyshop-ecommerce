@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - BabyShop</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar-root"></div>
+
+<div class="container">
+  <h2 class="section-title">Admin Dashboard</h2>
+
+  <div class="admin-grid">
+    <div class="admin-sidebar">
+      <button class="admin-tab active" data-tab="products">📦 Products</button>
+      <button class="admin-tab" data-tab="categories">🏷️ Categories</button>
+      <button class="admin-tab" data-tab="orders">🧾 Orders</button>
+      <button class="admin-tab" data-tab="users">👤 Users</button>
+    </div>
+
+    <div>
+      <div id="admin-alert"></div>
+      <div id="admin-panel">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+
+<div id="footer-root"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
