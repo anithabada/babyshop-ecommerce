@@ -12,8 +12,13 @@ public final class AppConfig {
         Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
 
     // ----- Database -----
-    public static final String DB_URL = "jdbc:mariadb://localhost:3306/babyshop_db?useSSL=false&allowPublicKeyRetrieval=true";
-    public static final String DB_USER = "babyshop_user";
+    public static final String DB_URL =
+    System.getenv().getOrDefault(
+        "DB_URL",
+        "jdbc:mariadb://localhost:3306/babyshop_db?useSSL=false&allowPublicKeyRetrieval=true"
+    );
+    public static final String DB_USER =
+    System.getenv().getOrDefault("DB_USER", "babyshop_user");
     public static final String DB_PASSWORD = System.getenv("DB_PASSWORD");
 
     // ----- JWT -----
@@ -22,7 +27,7 @@ public final class AppConfig {
 
     // ----- Static frontend -----
     // Directory containing index.html, css/, js/ - served at "/"
-    public static final String FRONTEND_DIR = "../frontend";
+    public static final String FRONTEND_DIR = "frontend";
 
     private AppConfig() {}
 }
