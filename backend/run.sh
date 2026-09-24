@@ -16,4 +16,4 @@ if [ ! -d "bin" ]; then
 fi
 
 echo "Starting BabyShop backend on http://localhost:8080 ..."
-java -cp "bin:lib/*" com.babyshop.Main
+java -cp "bin;lib/*" com.babyshop.Main

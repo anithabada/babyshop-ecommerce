@@ -44,7 +44,8 @@ public class Main {
         new AdminHandler().register(apiRouter);
 
         // 4. Start the HTTP server: API under /api, static frontend under /
-        HttpServer server = HttpServer.create(new InetSocketAddress(AppConfig.SERVER_PORT), 0);
+       HttpServer server = HttpServer.create(
+        new InetSocketAddress("0.0.0.0", AppConfig.SERVER_PORT), 0);
         server.createContext("/api", apiRouter);
         server.createContext("/", new StaticFileHandler(AppConfig.FRONTEND_DIR));
         server.setExecutor(Executors.newFixedThreadPool(20));

@@ -8,7 +8,8 @@ package com.babyshop.config;
 public final class AppConfig {
 
     // ----- Server -----
-    public static final int SERVER_PORT = 8080;
+    public static final int SERVER_PORT =
+        Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
 
     // ----- Database -----
     public static final String DB_URL = "jdbc:mariadb://localhost:3306/babyshop_db?useSSL=false&allowPublicKeyRetrieval=true";
